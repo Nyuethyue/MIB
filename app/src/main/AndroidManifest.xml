@@ -17,13 +17,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Add"
+            android:name=".AgaricusMushroom"
             android:label="@string/title_activity_add"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Ediable"
             android:label="@string/title_activity_ediable"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OysterMushroom"
+            android:parentActivityName=".Ediable"></activity>
     </application>
 
 </manifest>

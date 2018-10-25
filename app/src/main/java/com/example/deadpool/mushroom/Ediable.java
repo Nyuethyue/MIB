@@ -112,7 +112,7 @@ public class Ediable extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_about) {
             // Handle the action about action
-            Intent intent = new Intent(this, Add.class);
+            Intent intent = new Intent(this, AgaricusMushroom.class);
             startActivity(intent);
             return true;
         } else if (id == R.id.action_contact){
@@ -130,7 +130,7 @@ public class Ediable extends AppCompatActivity
 
         if (id == R.id.ediable) {
             // Handle the ediable action
-            Intent intent = new Intent(this, Add.class);
+            Intent intent = new Intent(this, AgaricusMushroom.class);
             startActivity(intent);
 
         } else if (id == R.id.non_ediable) {

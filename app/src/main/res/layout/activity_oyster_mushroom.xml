@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OysterMushroom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.synnapps.carouselview.CarouselView
+                    android:id="@+id/carouselView"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    app:fillColor="@color/colorWhite"
+                    app:pageColor="@color/colorWhite"
+                    app:autoPlay="false"
+                    app:radius="6dp"
+                    app:slideInterval="3000"
+                    app:strokeColor="@color/colorGrey"
+                    app:strokeWidth="1dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:layout_marginTop="10dp"
+                    android:text="Oyster Mushroom"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nu.499.00"
+                            android:textSize="19sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rinchinding Chhukha"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Local Name: No local Name"
+                            android:textSize="13sp"
+                            android:layout_marginBottom="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.5 of 5 stars"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5604 ratings"
+                            android:textSize="13sp"
+                            android:layout_marginBottom="10dp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorOffBlack" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oyster mushrooms are also a popular edible. They have a nutty, subtle flavor that goes well in soups, stews, and sauces. Fortunately Pleurotus ostreatus is one of the easiest species to cultivate. If you're not into growing your own mushrooms, you can find them in the woods or your local grocery store (where you may see wildlife of a different sort)."
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oyster mushrooms are also a popular edible. They have a nutty, subtle flavor that goes well in soups, stews, and sauces. Fortunately Pleurotus ostreatus is one of the easiest species to cultivate. If you're not into growing your own mushrooms, you can find them in the woods or your local grocery store (where you may see wildlife of a different sort)."
+                    android:layout_marginBottom="20dp" />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add to cart"
+                    android:background="@drawable/button_online"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

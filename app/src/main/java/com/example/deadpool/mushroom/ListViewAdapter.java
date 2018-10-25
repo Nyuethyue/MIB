@@ -5,6 +5,7 @@ package com.example.deadpool.mushroom;
  */
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,7 +55,7 @@ public class ListViewAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int postition, View view, ViewGroup parent) {
+    public View getView(final int postition, View view, ViewGroup parent) {
         ViewHolder holder;
         if (view==null){
             holder = new ViewHolder();
@@ -81,6 +82,60 @@ public class ListViewAdapter extends BaseAdapter {
             @Override
             public void onClick(View view) {
                 //code later
+                if (modelList.get(postition).getTitle().equals("Agaricus")){
+                    //start Argricus activity and title for action bar
+                    Intent intent = new Intent(mContext, OysterMushroom.class);
+                    intent.putExtra("actionBarTitle", "Agaricus");
+                    mContext.startActivity(intent);
+                }
+                if (modelList.get(postition).getTitle().equals("Chanterelle")){
+                    //start Argricus activity and title for action bar
+                    Intent intent = new Intent(mContext, OysterMushroom.class);
+                    intent.putExtra("actionBarTitle", "Chanterelle");
+                    mContext.startActivity(intent);
+                }
+                if (modelList.get(postition).getTitle().equals("Crimini")){
+                    //start Argricus activity and title for action bar
+                    Intent intent = new Intent(mContext, OysterMushroom.class);
+                    intent.putExtra("actionBarTitle", "Crimini");
+                    mContext.startActivity(intent);
+                }
+                if (modelList.get(postition).getTitle().equals("Shiitake")){
+                    //start Argricus activity and title for action bar
+                    Intent intent = new Intent(mContext, OysterMushroom.class);
+                    intent.putExtra("actionBarTitle", "Shiitake");
+                    mContext.startActivity(intent);
+                }
+                if (modelList.get(postition).getTitle().equals("Oyster")){
+                    //start Argricus activity and title for action bar
+                    Intent intent = new Intent(mContext, OysterMushroom.class);
+                    intent.putExtra("actionBarTitle", "Oyster");
+                    mContext.startActivity(intent);
+                }
+                if (modelList.get(postition).getTitle().equals("Enoki")){
+                    //start Argricus activity and title for action bar
+                    Intent intent = new Intent(mContext, OysterMushroom.class);
+                    intent.putExtra("actionBarTitle", "Enoki");
+                    mContext.startActivity(intent);
+                }
+                if (modelList.get(postition).getTitle().equals("Portabello")){
+                    //start Argricus activity and title for action bar
+                    Intent intent = new Intent(mContext, OysterMushroom.class);
+                    intent.putExtra("actionBarTitle", "Portabello");
+                    mContext.startActivity(intent);
+                }
+                if (modelList.get(postition).getTitle().equals("Porcini")){
+                    //start Argricus activity and title for action bar
+                    Intent intent = new Intent(mContext, OysterMushroom.class);
+                    intent.putExtra("actionBarTitle", "Porcini");
+                    mContext.startActivity(intent);
+                }
+                if (modelList.get(postition).getTitle().equals("Morel")){
+                    //start Argricus activity and title for action bar
+                    Intent intent = new Intent(mContext, OysterMushroom.class);
+                    intent.putExtra("actionBarTitle", "Morel");
+                    mContext.startActivity(intent);
+                }
             }
         });
 
